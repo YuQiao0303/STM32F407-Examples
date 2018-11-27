@@ -9,6 +9,8 @@
 "..\obj\stm32f4xx_usart.o"
 "..\obj\delay.o"
 "..\obj\sys.o"
+"..\obj\beep.o"
+"..\obj\led.o"
 --library_type=microlib --strict --scatter "..\OBJ\Template.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
