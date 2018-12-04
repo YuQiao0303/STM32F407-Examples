@@ -46,7 +46,7 @@ u8 KEY_Scan(u8 mode)
 {	 
 	static u8 key_up=1;//按键按松开标志
 	if(mode)key_up=1;  //支持连按		  
-	if(key_up&&(KEY0==0||KEY1==0||KEY2==0||WK_UP==1))  //key_up == 1: 支持连按或不支持连按时按键松开；故不支持连按时，长按只返回一次按键值，之后一直返回0
+	if(key_up&&(KEY0==0||KEY1==0||KEY2==0||WK_UP==1))
 	{
 		delay_ms(10);//去抖动 
 		key_up=0;
